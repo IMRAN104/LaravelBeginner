@@ -14,4 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// With Controller
+Route::get('/services', 'HelloController@services');
 Route::get('/hello', 'HelloController@index');
+//Without Controller
+Route::view('/about', 'about');
